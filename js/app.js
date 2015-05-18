@@ -1,0 +1,2 @@
+var app={};app.userProfile=function(){var e=$("#profile").html(),o=_.template(e,{variable:"m"});$.getJSON("http://applicant.pointsource.us/api/v1/7c026bb0-f1e5-4265-af4b-900e832ddfa5").done(function(e){$(".user-profile").html(o(e))}).fail(function(e,o,t){console.log(t);var r="Failed to connect to the PointSource API... try refreshing.";$(".user-profile").html(r)})},function(){app.userProfile()}();
+//# sourceMappingURL=app.js.map

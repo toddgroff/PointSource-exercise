@@ -1,1 +1,0 @@
-## PointSource Exercise
