@@ -9,17 +9,15 @@
 
     <div class="user-profile">
 
-      testing
-
     </div>
 
     <script type="text/html" id="profile">
-      <img src="http://applicant.pointsource.us/images/placeholder.png" class="placeholder <%- m.sex %>">
-      <span class="user-name"><%- m.first-name + ' ' + m.family-name %></span>
+      <img src="http://applicant.pointsource.us/images/placeholder.png" class="placeholder <%- m.person.sex %>">
+      <span class="user-name"><%- m.person['first-name'] + ' ' + m.person['family-name'] %></span>
       <div class="user-address">
-        <span><%- m.address.house-# + ' ' + m.address.street-name %></span>
-        <span><%- m.address.city + ' ' + m.address.st %></span>
-        <span><%- m.address.zip %></span>
+        <span><%- m.person.address['house-#'] + ' ' + m.person.address['street-name'] %></span>
+        <span><%- m.person.address.city + ' ' + m.person.address.st %></span>
+        <span><%- m.person.address.zip %></span>
       </div>
     </script>
 
